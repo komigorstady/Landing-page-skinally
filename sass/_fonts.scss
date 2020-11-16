@@ -1,0 +1,26 @@
+@mixin bold{
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin light{
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin container_media ($max-width, $max_width_dop) {
+    @media  (max-width:$max_width_dop) {
+        .container{
+            max-width: $max-width; 
+        }
+    }
+}
+
+@mixin container_media_tablets ($max-width, $max_width_dop) {
+    @media  (max-width:$max_width_dop) {
+        .container{
+            max-width: $max-width; 
+            margin: 0px 20px;
+        }
+    }
+}
+
+

@@ -1,0 +1,100 @@
+.navbar
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background-color: #fff
+    z-index: 99
+    &_wrap
+       display: flex
+       justify-content: space-between
+       align-items: center 
+       min-height: 80px
+    &_mobile, &_landline
+        text-align: right
+    &_phone
+        font-size: 19px
+        display: block
+        +bold
+        text-decoration:  none
+        color: $text_color
+        margin-bottom: 5px
+    &_small_text
+        display: block
+        font-size: 14px
+        color: $text_color_light
+        text-decoration: none
+
+.menu
+    opacity: 0
+    position: fixed
+    z-index: 0
+    top: 80px
+    left: 0
+    padding: 16px 0
+    width: 100%
+    background-color: $primary
+    color: #fff
+    transition: 0.2s
+    transform: translateY(-100%)
+    &_active
+        transform: translateY(-100%)
+    &_nav
+        display: flex 
+        align-items: center
+        justify-content: space-around
+    
+    &_link
+        text-decoration: none
+        font-size: 17px
+        text-transform: uppercase
+    &_button
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background-color: transparent
+        border: none 
+        border-right: 1px solid rgba(#510bba, 0.1)
+        border-left: 1px solid rgba(#510bba, 0.1)
+        height: 80px 
+        width: 70px
+        &_line
+            margin: 5px 0px
+            display: block
+            background-color: green
+            width: 20px
+            height: 3px
+            
+.logo
+    &_text
+        display: block
+        font-size: 18px
+        tex-transform: uppercase
+        margin-bottom: 5px
+        +bold
+    &_discription
+        font-size: 14px
+        display: block
+        color: $text_color_light
+
+@media  (max-width: 992px)
+    .navbar
+        &_mobile, &_landline
+            display: none
+    
+@media (max-width: 562px)
+    .logo
+        display: none
+    .menu
+        padding-top: 60px 
+//        transform: translateY(0)
+        height: 50%
+        &_button
+           height: 60px
+        &_nav
+            flex-direction: column
+        &_link
+            margin-bottom: 20px
+
+            
