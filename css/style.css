@@ -453,4 +453,62 @@ body {
     margin-left: 30px;
   }
 }
+
+.price_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.price_card {
+  position: relative;
+  border: 2px solid #000;
+}
+
+.price_card_text {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.price_card_title {
+  margin: 0;
+}
+
+.price_card_cost {
+  font-family: 'Roboto', sans-serif;
+}
+
+.price_card_pricetag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.price_card_button {
+  text-align: center;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  padding: 20px;
+  height: 100px;
+}
+
+.price_card:hower .price_card_button {
+  z-index: 99;
+}
 /*# sourceMappingURL=style.css.map */
